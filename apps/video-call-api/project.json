@@ -1,0 +1,26 @@
+{
+  "name": "video-call-api",
+  "$schema": "../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "apps/video-call-api/src",
+  "projectType": "application",
+  "tags": [],
+  "targets": {
+    "serve": {
+      "executor": "@nx/js:node",
+      "defaultConfiguration": "development",
+      "dependsOn": ["build"],
+      "options": {
+        "buildTarget": "video-call-api:build",
+        "runBuildTargetDependencies": false
+      },
+      "configurations": {
+        "development": {
+          "buildTarget": "video-call-api:build:development"
+        },
+        "production": {
+          "buildTarget": "video-call-api:build:production"
+        }
+      }
+    }
+  }
+}
