@@ -1,0 +1,9 @@
+{
+  "name": "VideoCall",
+  "$schema": "../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "apps/VideoCall/src",
+  "projectType": "application",
+  "tags": [],
+  "// targets": "to see all targets run: nx show project VideoCall --web",
+  "targets": {}
+}
