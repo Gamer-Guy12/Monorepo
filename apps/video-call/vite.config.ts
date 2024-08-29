@@ -5,7 +5,7 @@ import { nxViteTsPaths } from '@nx/vite/plugins/nx-tsconfig-paths.plugin';
 
 export default defineConfig({
   root: __dirname,
-  cacheDir: '../../node_modules/.vite/apps/VideoCall',
+  cacheDir: '../../node_modules/.vite/apps/video-call',
 
   server: {
     port: 4200,
@@ -25,7 +25,7 @@ export default defineConfig({
   // },
 
   build: {
-    outDir: '../../dist/apps/VideoCall',
+    outDir: '../../dist/apps/video-call',
     emptyOutDir: true,
     reportCompressedSize: true,
     commonjsOptions: {

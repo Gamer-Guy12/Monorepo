@@ -8,10 +8,10 @@ export default defineConfig({
       cypressDir: 'src',
       bundler: 'vite',
       webServerCommands: {
-        default: 'npx nx run VideoCall:serve',
-        production: 'npx nx run VideoCall:preview',
+        default: 'npx nx run video-call:serve',
+        production: 'npx nx run video-call:preview',
       },
-      ciWebServerCommand: 'npx nx run VideoCall:preview',
+      ciWebServerCommand: 'npx nx run video-call:preview',
       ciBaseUrl: 'http://localhost:4300',
     }),
     baseUrl: 'http://localhost:4200',

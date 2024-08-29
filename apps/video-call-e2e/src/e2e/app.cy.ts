@@ -1,6 +1,6 @@
 import { getGreeting } from '../support/app.po';
 
-describe('VideoCall-e2e', () => {
+describe('video-call-e2e', () => {
   beforeEach(() => cy.visit('/'));
 
   // it('should display welcome message', () => {
