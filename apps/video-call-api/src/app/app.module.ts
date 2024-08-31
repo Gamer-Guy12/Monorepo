@@ -1,6 +1,5 @@
 import { Module } from '@nestjs/common';
 
-import { AppController } from './app.controller';
 import { GraphQLModule } from '@nestjs/graphql';
 import { ApolloDriver, ApolloDriverConfig } from '@nestjs/apollo';
 import { DateScalar } from './graphql/Scalar/date.scalar';
@@ -20,7 +19,6 @@ import { CallResolver } from './graphql/Resolver/call.resolver';
     }),
     DbModule,
   ],
-  controllers: [AppController],
   providers: [DateScalar, UserResolver, MessageResolver, CallResolver],
 })
 export class AppModule {}
