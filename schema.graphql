@@ -1,0 +1,37 @@
+# ------------------------------------------------------
+# THIS FILE WAS AUTOMATICALLY GENERATED (DO NOT MODIFY)
+# ------------------------------------------------------
+
+type Call {
+  id: String!
+  over: Boolean!
+  users: [User!]!
+  messages: [Message!]!
+}
+
+type Message {
+  id: String!
+  content: String!
+  sentAt: Date!
+  sender: User!
+  call: Call!
+}
+
+type User {
+  id: String!
+  username: String!
+  password: String!
+  messages: [Message!]!
+  calls: [Call!]!
+}
+
+"""Date custom scalar type"""
+scalar Date
+
+type Query {
+  user(id: String!): User!
+  users: [User!]!
+  message(id: String!): Message!
+  messages(call: String!): [Message!]!
+  call(id: String!): Call!
+}
